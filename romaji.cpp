@@ -359,7 +359,8 @@ struct utf8_kana_to_romaji_converter {
 
 }
 
-void japanese::utf8_kana_to_romaji(const char *kana, std::string &romaji) {
+void japanese::utf8_kana_to_romaji(const char *kana, std::string &romaji)
+	throw(core::utf8_encoding_error) {
 	utf8_kana_to_romaji_converter(kana, romaji).convert();
 }
 

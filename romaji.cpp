@@ -320,7 +320,7 @@ struct utf8_kana_to_romaji_converter {
 					pop_vowel();
 					if(prev_cons == CONS_NONE) {
 						/* Note that prev_cons is re-assigned to fool uses_glide()
-						into treating small-i as consonant y. */
+						into treating certain vowels as consonant sounds. */
 						romaji += cons_to_romaji(prev_cons = vowel_to_cons(prev_vowel));
 					}
 					if(uses_glide(prev_cons)) {

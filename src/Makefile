@@ -25,7 +25,7 @@ depend:
 	$(CXX) -MM $(SRC) >> Makefile
 
 test: kana_to_romaji
-	python ./tests/run_test.py ./kana_to_romaji ./tests/tests.txt
+	python ../test/run_test.py ./kana_to_romaji ../test/tests.txt
 
 # DEPENDENCIES
 kana_to_romaji.o: kana_to_romaji.cpp romaji.h utf8.h

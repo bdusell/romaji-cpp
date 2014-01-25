@@ -9,9 +9,14 @@ int main(int argc, char **argv) {
 	}
 
 	const char *kana = argv[1];
-	std::string romaji;
-	japanese::utf8_kana_to_romaji(kana, romaji);
-	std::cout << romaji << std::endl;
+	try {
+		std::string romaji;
+		japanese::utf8_kana_to_romaji(kana, romaji);
+		std::cout << romaji << std::endl;
+	}
+	catch(const core::utf8_encoding_error &e) {
+		std::cerr << e.what() << std::endl;
+	}
 
 	return 0;
 }

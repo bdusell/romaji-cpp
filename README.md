@@ -58,7 +58,7 @@ words work as well.
 	./kana_to_romaji クァルテット
 	kwarutetto
 
-Perhaps one of the more interesting cases are the various spellings of "Whiskey."
+Perhaps one of the more interesting cases is the various spellings of "Whiskey."
 
 	./kana_to_romaji ウィスキー
 	wisukii

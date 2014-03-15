@@ -1,3 +1,6 @@
+#ifndef _JAPANESE_ROMAJI_H_
+#define _JAPANESE_ROMAJI_H_
+
 #include "utf8.h"
 
 namespace japanese {
@@ -9,4 +12,6 @@ void utf8_kana_to_romaji(const char *kana, std::string &romaji)
 	throw(core::utf8_encoding_error);
 
 } // namespace japanese
+
+#endif
 

@@ -1,3 +1,6 @@
+#ifndef _CORE_UTF_H_
+#define _CORE_UTF_H_
+
 #include <stdint.h>
 #include <stdexcept>
 
@@ -31,4 +34,6 @@ utf8_encoding_error::utf8_encoding_error(const std::string &msg)
 	: std::invalid_argument(msg) {}
 
 } // namespace core
+
+#endif
 
